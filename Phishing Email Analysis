@@ -1,0 +1,43 @@
+Return-Path: <support@secure-bank-login.com>
+Received: from unknown (HELO mail.secure-bank-login.com) (185.212.45.87)
+  by mail.example.com with ESMTP; Fri, 08 Aug 2025 10:23:45 +0530
+Received-SPF: Fail (example.com: domain of support@secure-bank-login.com does not designate 185.212.45.87 as permitted sender)
+Authentication-Results: mail.example.com;
+  spf=fail smtp.mailfrom=support@secure-bank-login.com;
+  dkim=none;
+  dmarc=fail header.from=secure-bank-login.com
+From: "Secure Bank" <support@secure-bank-login.com>
+
+  SPF Fail – The sender’s IP 185.212.45.87 is not authorized to send emails for secure-bank-login.com.
+
+
+2. DKIM Missing – No digital signature to verify message integrity.
+
+
+3. DMARC Fail – The policy check failed, indicating possible spoofing.
+
+
+4. Suspicious IP Address – IP not linked to any real bank server; possible use of compromised or rented SMTP server.
+
+
+5. Return-Path vs From Mismatch – May indicate forged sending address.
+
+  Body Content Analysis
+
+Indicators:
+
+Urgency / Threat – “Your account will be suspended” creates panic.
+
+Generic Greeting – “Dear Customer” instead of actual name.
+
+Suspicious Link – Text says Verify Now but points to http://secure-bank-login.com/verify (not official bank domain).
+
+Spelling/Grammar – Minor errors, unusual sentence structure.
+
+  Risk Assessment
+
+Type: Credential Phishing
+
+Impact: High (Bank account takeover possible)
+
+Likelihood: High (Targets random email users)
