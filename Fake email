@@ -1,0 +1,17 @@
+
+Return-Path: <support@secure-bank-login.com>
+Received: from unknown (HELO mail.secure-bank-login.com) (185.212.45.87)
+  by mail.example.com with ESMTP; Fri, 08 Aug 2025 10:23:45 +0530
+Received-SPF: Fail (example.com: domain of support@secure-bank-login.com does not designate 185.212.45.87 as permitted sender) client-ip=185.212.45.87;
+Authentication-Results: mail.example.com;
+  spf=fail smtp.mailfrom=support@secure-bank-login.com;
+  dkim=none;
+  dmarc=fail header.from=secure-bank-login.com
+From: "Secure Bank" <support@secure-bank-login.com>
+To: you@example.com
+Subject: Urgent: Your Bank Account Will Be Suspended!
+Date: Fri, 08 Aug 2025 10:20:15 +0530
+Message-ID: <20250808102015.12345@mail.secure-bank-login.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+
